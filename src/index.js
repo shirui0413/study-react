@@ -1,17 +1,15 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import ReactDOM from 'react-dom';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+// import ReactDOM from 'react-dom/client';
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(
+//   <React.StrictMode>
+//     DD
+//   </React.StrictMode>
+// );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// render(参数1 ， 参数2)
+// 参数2：document.getElementById('root') -> 获取要插入的容器 -> index.html内的id
+// 参数1：jsx语法<h1>study</h1>
+ReactDOM.render( <h1>study</h1>, document.getElementById('root'));
