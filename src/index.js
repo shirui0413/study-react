@@ -9,9 +9,25 @@ import ReactDOM from 'react-dom';
 //   </React.StrictMode>
 // );
 
-// render(参数1 ， 参数2)
-// 参数2：document.getElementById('root') -> 获取要插入的容器 -> index.html内的id
-// 参数1：jsx语法 <h1>study</h1>    js + xml(html)
-//       遇到<>按照html解析，遇到{} 按照js语法解析
-const react = "study react";
-ReactDOM.render( <h1>{react}</h1>, document.getElementById('root'));
+
+function tick() {
+  // （） -> 如果存在标签结构，并且标签结构要换行，需要用（）括起来
+  const element = (
+    <div>
+      <h1>Hello, react ！</h1>
+      <h2>the time is { new Date().toLocaleTimeString()}.</h2>
+    </div>
+  )
+  // 没加（）也没有报错，版本问题？
+  const element2 = 
+  <div>
+    <h1> ???</h1>
+    <h2>!!!</h2>
+  </div>
+
+  // react 渲染
+  ReactDOM.render( element2, document.getElementById('root'));
+}
+
+// 方法调用
+setInterval(tick, 1000);
