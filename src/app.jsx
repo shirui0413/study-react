@@ -23,8 +23,9 @@ class App extends React.Component {
             // 引用Home组件
             <Home/>
             // 引用MyNav组件，在引用组件处给组件填加属性
-            <MyNav nav = {nav1}/>
-            <MyNav nav = {nav2}/>
+            // 追加了nav 和title两个props
+            <MyNav nav = {nav1} title = "大人导航"/>
+            <MyNav nav = {nav2} title = "小孩导航"/>
         </div>
         )
 

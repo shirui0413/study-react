@@ -5,6 +5,7 @@ export default class MyNav extends React.Component {
         console.log(this.props.nav);
         return (
             <div>
+                <h1> {this.props.title} </h1>
                 <ul>
                     // 在引用的组件中为这里的props设置不同和值
                     {/** 在jsx中加注释的方法，外层追加大括号 */}
