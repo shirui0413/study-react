@@ -3,6 +3,8 @@ import React from "react";
 
 // 在app中引用Home， 组件之间可以相互引用
 import Home from './Home';
+import StateComponet from "./StateComponent";
+
 
 // 在app中引用MyNav
 import MyNav from "./MyNav";
@@ -19,6 +21,7 @@ class App extends React.Component {
     render () {
         return (
         <div>
+            {/*
             <h1> hello, react component!</h1>
             // 引用Home组件
             <Home/>
@@ -26,6 +29,8 @@ class App extends React.Component {
             // 追加了nav 和title两个props
             <MyNav nav = {nav1} title = "大人导航"/>
             <MyNav nav = {nav2} title = "小孩导航"/>
+            */}
+            <StateComponet/>
         </div>
         )
 
